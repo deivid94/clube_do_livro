@@ -29,6 +29,34 @@
 
   --font-principal: "Raleway", sans-serif;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 385px;
+  border: 1px solid white;
+}
+
+
+.button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--pink-dark);
+  color: var(--text-title);
+}
+.button-secondary {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--blue-dark);
+  color: var(--text-title);
+}
+
+.button-secondary:hover {
+  background: var(--blue-dark);
+}
+.button:hover {
+  background: var(--pink-base);
+}
 
 html,
 body {
@@ -40,6 +68,11 @@ body {
 a {
   font-family: inherit;
   text-decoration: none;
+  color: var(--blue-light);
+}
+
+a:hover {
+  color: var(--text-label);
 }
 
 li {

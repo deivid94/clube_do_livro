@@ -1,4 +1,15 @@
-.hero {
+nav {
+  background-image: image("/assets/image/hero-background.png");
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 0 1.25rem;
+
+  & figure img {
+    max-width: 75%;
+  }
 }

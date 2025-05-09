@@ -1,0 +1,11 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding:2rem ;
+    background: var(--shape-base);
+    border: 1px solid var(--shape-stroke);
+    border-radius: 1,5rem;
+        & div:nth-child {
+            
+        }
+    }
