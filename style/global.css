@@ -29,14 +29,23 @@
 
   --font-principal: "Raleway", sans-serif;
 }
-.container {
+
+body {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  color: var(--text-body);
+  font-family: var(--font-principal);
+  background: var(--shape-background);
+}
+.container {
   width: 100%;
   max-width: 385px;
-  border: 1px solid white;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .button {
   padding: 1rem;
@@ -59,11 +68,6 @@
 }
 
 html,
-body {
-  font-family: var(--font-principal);
-  background: var(--shape-background);
-  color: var(--text-body);
-}
 
 a {
   font-family: inherit;
@@ -78,3 +82,7 @@ a:hover {
 li {
   list-style: none;
 }
+
+.padding-default {
+  padding: 0.25rem 1.25rem 0 1.25rem;
+} 
