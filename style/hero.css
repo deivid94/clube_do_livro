@@ -15,13 +15,11 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
 
     & h1 {
       margin-bottom: 1.2rem;
       font: bold 1.75rem / normal var(--font-principal);
       text-align: center;
-      
     }
     & p {
       text-align: center;
@@ -31,6 +29,45 @@ nav {
   }
 
   & section:nth-child(3) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 5rem;
+   
+    
+
+    & p {
+      position: absolute;
+      font: 1rem / 1.4;
+      text-align: center;
+      align-content: center;
+      
+      
+    }
+    & img {
+      max-width: 2.5rem;
+    }
+
+    & img[src*="spellbook"] {
+      position: relative;
+      top: -20px;
+      left: 70%;
+      transform: rotate(20deg);
+    }
+
+    & img[src*="planchette"] {
+      position: relative;
+      bottom: -70px;
+      transform: rotate(-25deg);
+    }
+
+    & img[src*="crystal"] {
+      position: relative;
+      right: -85%;
+      top: 20px;
+      transform: rotate(20deg);
+    }
   }
 }
 
