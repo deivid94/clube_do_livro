@@ -30,10 +30,27 @@ main {
   }
 
   & section:nth-child(2) {
-    & img[src*="book"] {
-      width: 100%;
-      max-width: 9.8rem;
-      margin-bottom: 3rem;
-    }
+  }
+  & img[src*="book"] {
+    width: 100%;
+    max-width: 11.25rem;
+    margin-block: 4rem 5.5rem;
+  }
+
+  & img[src*="bookmark"] {
+    position: absolute;
+    max-width: 6rem;
+    
+  }
+
+  & img[src*="yellow"] {
+    position: relative;
+    transform: rotate(11.72deg);
+  }
+
+  & img[src*="purple"] {
+    position: relative;
+    border: 1px solid blue;
+    transform: rotate(22deg);
   }
 }
