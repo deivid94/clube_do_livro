@@ -1,6 +1,5 @@
 nav {
   width: 100%;
-  position: absolute;
   display: flex;
   flex-direction: column;
 
@@ -71,10 +70,11 @@ nav {
   }
 }
 
-nav::after {
+/* nav::after {
+  border: 1px solid ;
   content: "";
   position: relative;
   width: 23.5rem;
   height: 23.5rem;
   border-radius: 50%;
-}
+} */
