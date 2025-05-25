@@ -5,7 +5,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid blue;
+  
 
   & section:nth-child(1) {
     & div:nth-child(1) {
@@ -51,7 +51,6 @@ main {
 
   & img[src*="purple"] {
     position: relative;
-    border: 1px solid blue;
     transform: rotate(22deg);
   }
 }
@@ -61,7 +60,7 @@ main::after {
   content: "";
   width: 350px;
   height: 350px;
-  background-image: radial-gradient(circle, rgba(63,15,65, 0.8), #000);
+  background-image: radial-gradient(circle, rgba(63,15,65, 0.5), #000);
   z-index: -1;
   border-radius: 50%;
   
