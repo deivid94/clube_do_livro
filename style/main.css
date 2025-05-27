@@ -40,12 +40,12 @@ main {
   & img[src*="bookmark"] {
     position: absolute;
     max-width: 6rem;
-    
   }
 
   & img[src*="yellow"] {
     position: relative;
     transform: rotate(11.72deg);
+    z-index: -2;
   }
 
   & img[src*="purple"] {
