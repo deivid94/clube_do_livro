@@ -3,6 +3,10 @@ nav {
   display: flex;
   flex-direction: column;
   position: relative;
+  background-image: url(/assets/image/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-position: center top;
 
   & section:nth-child(1) {
     display: flex;
@@ -15,6 +19,7 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10rem;
 
     & h1 {
       margin-bottom: 1.2rem;
@@ -34,16 +39,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     padding-block: 5rem;
-   
-    
 
     & p {
       position: absolute;
       font: 1rem / 1.4;
       text-align: center;
       align-content: center;
-      
-      
     }
     & img {
       max-width: 2.5rem;
@@ -71,16 +72,13 @@ nav {
   }
 }
 
- nav::after {
-  
+nav::after {
   content: "";
-  top: 100px;
-  right: 0;
-  border-radius: 50%;
-  position:  absolute;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(63, 15, 65, 0.50), #000);
+  bottom: -100px;
+  right: -20px;
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(63, 15, 65, 0.25), #00050a);
   z-index: -1;
-  
 }

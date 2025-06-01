@@ -5,13 +5,15 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 
   & section:nth-child(1) {
+  
+    margin-bottom: 4rem;
     & div:nth-child(1) {
       display: flex;
       align-items: center;
       flex-direction: row;
+      
 
       & img[src*="star"] {
         width: 100%;
@@ -31,6 +33,10 @@ main {
   }
 
   & section:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   & img[src*="book"] {
     width: 100%;
@@ -40,28 +46,32 @@ main {
 
   & img[src*="bookmark"] {
     position: absolute;
-    max-width: 6rem;
+    max-width: 5rem;
   }
 
   & img[src*="yellow"] {
     position: relative;
     transform: rotate(11.72deg);
-    z-index: -2;
+    z-index: -1;
+    top: -50px;
+    right: 35px;
   }
 
   & img[src*="purple"] {
     position: relative;
     transform: rotate(22deg);
+    z-index: -2;
+    
   }
 }
 
 main::after {
   position: absolute;
   content: "";
-  width: 350px;
-  height: 350px;
-  background-image: radial-gradient(circle, rgba(63,15,65, 0.5), #000);
-  z-index: -1;
   border-radius: 50%;
-  
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(63, 15, 65, 0.25), #00050a);
+  z-index: -3;
+  top: 10px;
 }
