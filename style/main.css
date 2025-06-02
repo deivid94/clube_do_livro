@@ -33,12 +33,11 @@ main {
   & section:nth-child(2) figure {
     display: flex;
     flex-direction: row;
-    
   }
 
   & img[src*="pin"] {
     position: relative;
-    max-height:5.3rem ;
+    max-height: 5.3rem;
     transform: rotate(-20deg);
     bottom: -100px;
     right: -30px;
@@ -46,7 +45,6 @@ main {
   }
   & img[src*="book"] {
     max-height: 11.75rem;
-    
   }
 
   & img[src*="bookmark"] {
@@ -67,6 +65,12 @@ main {
     transform: rotate(25deg);
     z-index: -2;
     right: 55px;
+  }
+
+  & figure span {
+    display: none;
+    font-size: 0.625rem;
+    
   }
 }
 
