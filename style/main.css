@@ -5,6 +5,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 4rem;
 
   & section:nth-child(1) {
     margin-bottom: 4rem;
@@ -78,9 +79,10 @@ main::after {
   position: absolute;
   content: "";
   border-radius: 50%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(63, 15, 65, 0.25), #00050a);
+  width: 298px;
+  height: 298px;
+  background: radial-gradient(circle, rgba(63, 15, 65, 0.5) 100%, rgba(255,0,255,0)0%);
+  filter: blur(100px);
   z-index: -3;
-  top: 10px;
+  top:100px;
 }
