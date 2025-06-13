@@ -1,11 +1,75 @@
 .card {
+  width: 272px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--shape-base);
+  border: 1px solid var(--shape-stroke);
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+
+  & div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    padding:2rem ;
-    background: var(--shape-base);
-    border: 1px solid var(--shape-stroke);
-    border-radius: 1,5rem;
-        & div:nth-child {
-            
-        }
+    margin-bottom: 2rem;
+
+    & span {
+      color: var(--blue-light);
+      font-weight: bold;
+      margin-bottom: 1rem;
     }
+
+    & h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    & p {
+      font-weight: 200;
+      font-size: 0.825rem;
+    }
+  }
+
+  & div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    & li img {
+      width: 100%;
+      max-width: 5%;
+      margin-right: 10px;
+      box-shadow: 0 4px 12px rgba (0, 0, 0, 0.3);
+    }
+    & li {
+      font-size: 0.825rem;
+      font-weight: 100;
+      margin-block: 1rem;
+    }
+
+    & a {
+      text-align: center;
+      padding: 0.825rem;
+      border-radius: 10px;
+      background-color: var(--blue-dark);
+      color: white;
+    }
+  }
+}
+
+.card_2 {
+  background-color: var(--shape-hover);
+
+  & div span {
+    color: var(--pink-light) !important
+
+  }
+  & li img {
+    width: 100%;
+    max-width: 5%;
+    
+  }
+
+  & a {
+    
+    background-color: var(--pink-dark)!important; 
+  }
+}

@@ -1,6 +1,20 @@
 .price {
     display: flex;
     flex-direction: column;
+    border-bottom:3rem ;
+    margin: 0 auto;
+
+    & div:nth-child(1){
+        display: flex;
+        align-content: center;
+        align-items: center;
+    
+
+        & h1 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
 }
 
 

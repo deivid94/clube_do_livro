@@ -5,7 +5,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 
   & section:nth-child(1) {
     margin-bottom: 4rem;
