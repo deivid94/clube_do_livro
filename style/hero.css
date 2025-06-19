@@ -3,10 +3,6 @@ nav {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-image: url(/assets/image/hero-background.png);
-  background-repeat: no-repeat;
-  background-size: 250%;
-  background-position: center top;
 
   & section:nth-child(1) {
     display: flex;
@@ -20,6 +16,7 @@ nav {
     display: flex;
     flex-direction: column;
     margin-bottom: 10rem;
+    animation: animation_background 4s linear 500ms forwards;
 
     & h1 {
       margin-bottom: 1.2rem;
@@ -30,6 +27,8 @@ nav {
       text-align: center;
       font: 0.875rem/1.4 var(--font-principal);
       font-weight: 100;
+      opacity: 0;
+      animation: text_animation 4s linear 700ms forwards;
     }
   }
 
@@ -55,6 +54,11 @@ nav {
       top: -20px;
       left: 70%;
       transform: rotate(20deg);
+      animation: spellbook 2s both 100ms;
+    }
+
+    img[src*="spellbook"]:hover {
+      transform: rotate(-20px);
     }
 
     & img[src*="planchette"] {
@@ -72,6 +76,19 @@ nav {
   }
 }
 
+nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(/assets/image/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-position: center top;
+  opacity: 1;
+  animation: animation_background 4s linear 300ms forwards;
+  z-index: -1;
+}
+
 nav::after {
   content: "";
   border-radius: 50%;
@@ -84,7 +101,35 @@ nav::after {
       circle,
       rgba(63, 15, 65, 0.5) 100%,
       rgba(255, 0, 255, 0)
-    )0%;
+    )
+    0%;
   filter: blur(100px);
   z-index: -1;
+}
+
+@keyframes animation_background {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text_animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
